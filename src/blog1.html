@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+
+function changeCSS(cssFile, cssLinkIndex) {
+
+var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+var newlink = document.createElement("link");
+newlink.setAttribute("rel", "stylesheet");
+newlink.setAttribute("type", "text/css");
+newlink.setAttribute("href", cssFile);
+
+document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}   
+
+	var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+	</script>
+
+<link href="https://fonts.googleapis.com/css?family=Anton|Boogaloo|Economica|Finger+Paint|Just+Me+Again+Down+Here|Kirang+Haerang|Luckiest+Guy|Monofett|Open+Sans+Condensed:300|Orbitron|Oswald|Roboto+Condensed|Roboto:700|The+Girl+Next+Door&display=swap" rel="stylesheet">
+<body class="other-page">
+<title>Chris Morris - Blog - Vintage Computers</title>
+</body>
+<body>
+<div class="box_index_navbar">
+  <div class="box_index_title">Chris Morris</div>
+  
+  <!-- <img  width=300px;  src="small_blue_logo7.png " \ > -->
+  <div class="topnav"> <a href="contact.html">Contact me</a> <a class="active" href="blog.html">Blogs</a> <a href="profile.html">Portfolio</a> <a href="resume.html">Resume</a> <a href="about.html">About</a> <a href="index.html">Home</a> </div>
+</div>
+<div class="blog_container">
+  <div class="blog_main">
+    <div class="blog_menu">
+      <div id="blog_menu_picture"><img src="me_look_down.png" alt="Chris Morris looking down" width="221px" /></div>
+      <br>
+      <div id="b_heading_main">
+        <div id="b_upwrite">BLOG</div>
+      </div>
+      <div id="blog_social_box">
+        <div id="b_social_1">
+          <div class="socials_contact_blog"><a href="https://twitter.com/Chris_SW_DEV" target="_blank"> <img src="social_logos/new_twitter2.png" width="110px" alt="twitter not selected"> <img src="social_logos/new_twitter_white.png" width="110px" class="img-top" alt="twitter selected"> </a></div>
+        </div>
+        <div id="b_social_2">
+          <div class="socials_contact_blog"><a href="tel:0457298815"> <img src="social_logos/new_phone2.png" width="110px" alt="phone not selected"> <img src="social_logos/new_phone_white.png" width="110px" class="img-top" alt="phone selected"> </a></div>
+        </div>
+        <div id="b_social_3">
+          <div class="socials_contact_blog"> <a href="https://www.linkedin.com/in/chris-morris-ba941a1a3/" target="_blank"> <img src="social_logos/new_linkedin2.png" width="110px" alt="linkedin not selected"> <img src="social_logos/new_linkedin_white.png" width="110px" class="img-top" alt="linkedin selected"> </a> </div>
+        </div>
+        <div id="b_social_4">
+          <div class="socials_contact_blog"> <a href="https://medium.com/@chrismorris_82249" target="_blank"> <img src="social_logos/new_medium_round_edge2.png" width="110px" alt="medium not selected"> <img src="social_logos/new_medium_round_edge_white.png" width="110px" class="img-top" alt="medium selected"> </a> </div>
+        </div>
+        <div id="b_social_5">
+          <div class="socials_contact_blog"> <a href="https://github.com/ChrisR32" target="_blank"> <img src="social_logos/new_github2.png" width="110px" alt="github not selected"> <img src="social_logos/new_github_white.png" width="110px" class="img-top" alt="github selected"> </a> </div>
+        </div>
+        <div id="b_social_6">
+          <div class="socials_contact_blog"> <a href="mailto:morriscnm@hotmail.com"> <img src="social_logos/new_email2.png" width="110px" alt="email not selected"> <img src="social_logos/new_email_white.png" width="110px" class="img-top" alt="email selected"> </a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="blog_main2">
+      <div id="blog_content1">
+        <div id="b_pic1"><img src="mac3.png" width="200px" alt="old apple computer" /></div>
+        <div id="b_detail1">
+          <div id="b_heading">Vintage Computers</div>
+          <div id="b_brief">My passion for perserving and learning from vintage computers</div>
+          <br> 
+          <div id="b_length">Published on Mar 28 - 7 min read<br>
+            <div id="b_link"><a href="https://medium.com/@chrismorris_82249/vintage-computers-da87dd948698" target="_blank" ><img src="medium_logo.png" height="20px" alt="medium logo"/> Full blog is hosted on Medium, click here to open</a></div>
+          </div>
+          <br> 
+          <img src="blog1.png" width="600px" alt="amiga 500 pc" />
+          <br>       
+            <div id="b_brief">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- profile_main end --> 
+</div>
+<!-- profile_container end -->
+</div>
+</body>
+<div class="footer">
+  <p>Copyright 2020 Chris Morris</p>
+  <br>
+  <br>
+  <p>View this page in:<a href="#" onclick="changeCSS('mystyle.css', 0);">Dark Mode</a>|<a href="#" onclick="changeCSS('mystyle_white.css', 0);">Light Mode</a>|<a href="#" onclick="changeCSS('mystyle_blue.css', 0);">Blue Mode</a>|<a href="#" onclick="changeCSS('mystyle_purple.css', 0);">Purple Mode</a></p>
+</div>
+</html>

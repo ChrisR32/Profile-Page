@@ -156,11 +156,13 @@ Here are screenshots of my planning board:
 ![wire frame](docs/p12.png)
 ![wire frame](docs/p13.png)
 ![wire frame](docs/p14.png)
+![wire frame](docs/p15.png)
+![wire frame](docs/p16.png)
+![wire frame](docs/p17.png)
 
 ## Resources
 
 All images came from iconarchive, free to use for non-business, and were then customised by 
-
 
 http://www.iconarchive.com/show/pretty-office-9-icons-by-custom-icon-design/email-send-icon.html
 
@@ -189,5 +191,7 @@ Site is hosted on HostGator a web hosting service. I already had a subscription 
 Sites domain name was also already owned by 
 , owned for at least 10 years.
 
+## SRI
 
+The only thing I could find was the google fonts, it failed, spoke to Bruce who said there was an issue with SRI and google.
 
