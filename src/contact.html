@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+
+
+	
+	<script>
+
+function changeCSS(cssFile, cssLinkIndex) {
+
+var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+var newlink = document.createElement("link");
+newlink.setAttribute("rel", "stylesheet");
+newlink.setAttribute("type", "text/css");
+newlink.setAttribute("href", cssFile);
+
+document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+
+function twitter_Function1() {
+  var copyText = document.getElementById("twitter_Input1");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function twitter_Function2() {
+  var copyText = document.getElementById("twitter_Input2");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function linkedin_Function1() {
+  var copyText = document.getElementById("linkedin_Input1");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function linkedin_Function2() {
+  var copyText = document.getElementById("linkedin_Input2");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function github_Function1() {
+  var copyText = document.getElementById("github_Input1");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function github_Function2() {
+  var copyText = document.getElementById("github_Input2");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function medium_Function1() {
+  var copyText = document.getElementById("medium_Input1");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function medium_Function2() {
+  var copyText = document.getElementById("medium_Input2");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function email_Function1() {
+  var copyText = document.getElementById("email_Input1");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+function phone_Function1() {
+  var copyText = document.getElementById("phone_Input1");
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+	function showtwitter() {
+  var a = document.getElementById("linkedin");
+  var b = document.getElementById("github");
+  var c = document.getElementById("medium");
+  var d = document.getElementById("phone");
+  var e = document.getElementById("email");
+  var x = document.getElementById("twitter");
+  { x.style.display = "block";}
+  { a.style.display = "none";}
+  { b.style.display = "none";}
+  { c.style.display = "none";}
+  { d.style.display = "none";}
+  { e.style.display = "none";}
+}
+
+function showlinkedin() {
+  var x = document.getElementById("linkedin");
+  var b = document.getElementById("github");
+  var c = document.getElementById("medium");
+  var d = document.getElementById("phone");
+  var e = document.getElementById("email");
+  var a = document.getElementById("twitter");
+  { x.style.display = "block";}
+  { a.style.display = "none";}
+  { b.style.display = "none";}
+  { c.style.display = "none";}
+  { d.style.display = "none";}
+  { e.style.display = "none";}
+}
+
+function showgithub() {
+  var a = document.getElementById("linkedin");
+  var x = document.getElementById("github");
+  var c = document.getElementById("medium");
+  var d = document.getElementById("phone");
+  var e = document.getElementById("email");
+  var b = document.getElementById("twitter");
+  { x.style.display = "block";}
+  { a.style.display = "none";}
+  { b.style.display = "none";}
+  { c.style.display = "none";}
+  { d.style.display = "none";}
+  { e.style.display = "none";}
+}
+
+function showmedium() {
+  var x = document.getElementById("medium");
+  var a = document.getElementById("linkedin");
+  var b = document.getElementById("github");
+  var x = document.getElementById("medium");
+  var d = document.getElementById("phone");
+  var e = document.getElementById("email");
+  var c = document.getElementById("twitter");
+  { x.style.display = "block";}
+  { a.style.display = "none";}
+  { b.style.display = "none";}
+  { c.style.display = "none";}
+  { d.style.display = "none";}
+  { e.style.display = "none";}
+}
+
+function showphone() {
+  var a = document.getElementById("linkedin");
+  var b = document.getElementById("github");
+  var c = document.getElementById("medium");
+  var x = document.getElementById("phone");
+  var e = document.getElementById("email");
+  var d = document.getElementById("twitter");
+  { x.style.display = "block";}
+  { a.style.display = "none";}
+  { b.style.display = "none";}
+  { c.style.display = "none";}
+  { d.style.display = "none";}
+  { e.style.display = "none";}
+}
+
+function showemail() {
+  var a = document.getElementById("linkedin");
+  var b = document.getElementById("github");
+  var c = document.getElementById("medium");
+  var d = document.getElementById("phone");
+  var x = document.getElementById("email");
+  var e = document.getElementById("twitter");
+  { x.style.display = "block";}
+  { a.style.display = "none";}
+  { b.style.display = "none";}
+  { c.style.display = "none";}
+  { d.style.display = "none";}
+  { e.style.display = "none";}
+}
+
+/*!
+ * clipboard.js v2.0.6
+ * https://clipboardjs.com/
+ * 
+ * Licensed MIT © Zeno Rocha
+ */
+
+	</script>
+
+<link href="https://fonts.googleapis.com/css?family=Anton|Boogaloo|Economica|Finger+Paint|Just+Me+Again+Down+Here|Kirang+Haerang|Luckiest+Guy|Monofett|Open+Sans+Condensed:300|Orbitron|Oswald|Roboto+Condensed|Roboto:700|The+Girl+Next+Door&display=swap" rel="stylesheet">
+  <body class="other-page"><title>Chris Morris - Contact Me</title></body>
+</head>
+	<body>
+
+    <div class="box_index_navbar">
+      <div class="box_index_title">Chris Morris</div>
+      
+      <!-- <img  width=300px;  src="small_blue_logo7.png " \ > -->
+      <div class="topnav">
+      <a class="active" href="contact.html">Contact me</a>
+      <a href="blog.html">Blogs</a>
+      <a href="profile.html">Portfolio</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <a  href="index.html">Home</a>
+      </div>
+        </div>		
+		
+
+	
+<div class="container_main_contact">
+
+
+
+  
+  <div class="box_contact_main_1"><div class="contact_me_left">
+
+
+<div src="box_left_1"><div class="socials_contact">
+  <a onclick="showtwitter()">
+ <img src="social_logos/new_twitter2.png" width="150px" alt="twitter not selected">
+<img src="social_logos/new_twitter_white.png" width="150px" class="img-top" alt="twitter selected">
+ </a></div></div>
+ <div src="box_left_2"><div class="socials_contact"><a onclick="showphone()">
+  <img src="social_logos/new_phone2.png" width="150px" alt="phone not selected">
+  <img src="social_logos/new_phone_white.png" width="150px" class="img-top" alt="phone selected">
+</a></div></div>
+<div src="box_left_3"><div class="socials_contact">
+  <a onclick="showlinkedin()">
+       <img src="social_logos/new_linkedin2.png" width="150px" alt="linkedin not selected">
+       <img src="social_logos/new_linkedin_white.png" width="150px" class="img-top" alt="linkedin selected">
+    </a>
+   </div></div>
+   <div src="box_left_4"><div class="socials_contact">
+    <a onclick="showmedium()">
+         <img src="social_logos/new_medium_round_edge2.png" width="150px" alt="medium not selected">
+         <img src="social_logos/new_medium_round_edge_white.png" width="150px" class="img-top" alt="medium selected">
+      </a>
+     </div>	</div>
+  <div src="box_left_5"><div class="socials_contact">
+    <a onclick="showgithub()">
+         <img src="social_logos/new_github2.png" width="150px" alt="github not selected">
+         <img src="social_logos/new_github_white.png" width="150px" class="img-top" alt="github selected">
+      </a>
+     </div></div>
+  <div src="box_left_6"> <div class="socials_contact">
+    <a onclick="showemail()">
+         <img src="social_logos/new_email2.png" width="150px" alt="email not selected">
+         <img src="social_logos/new_email_white.png" width="150px" class="img-top" alt="email selected">
+    </a>
+
+
+
+  
+</div>
+</div>
+
+
+   </div></div>
+
+  
+
+
+  <div class="box_contact_main_2">
+    <div class="container_contact_top">
+	
+      <div class="box_contact_top_1"><div id="h1_contact">Contact Me</div></div>	
+      <div class="box_contact_top_2">Please Select your perfered contact method from the choices to the left. </div>
+      <div id="box_blank"></div>
+
+      <div id="twitter">
+<div class="box_right_1"></div>
+<div class="box_right_2">
+  <div id="social_details">
+    <div id="blue_font1">Username:</div>
+    <div id="left_font1"><input type="text" value="@Chris_SW_DEV" id="twitter_Input1" style="width: 240px;"></div>
+    <br>
+    <div id="blue_font2">Address:</div>
+    <div id="left_font2"><input type="text" value="https://twitter.com/Chris_SW_DEV" id="twitter_Input2" style="width: 240px;"></div>
+    <br></div>
+</div>
+
+<div class="box_right_3"><div class="socials_contact"> <div id="pad_box"><a onclick="twitter_Function1()">
+ <img src="social_logos/copy_profile_new.png" width="80px" alt="copy user not selected">
+<img src="social_logos/copy_user_on.png" width="80px" class="img-top" alt="copy user selected">
+ </a></div></div>
+ <div class="socials_contact"><div id="pad_box"><a onclick="twitter_Function2()">
+  <img src="social_logos/copy_url_new.png" width="80px" alt="cupy url not selected">
+ <img src="social_logos/copy_url_on.png" width="80px" class="img-top" alt="copy url selected">
+  </a></div></div>
+  <div class="socials_contact"><div id="pad_box"><a href="https://twitter.com/Chris_SW_DEV" target="_blank">
+    <img src="social_logos/open_url_new.png" width="80px" alt="open url not selected">
+   <img src="social_logos/open_url_on.png" width="80px" class="img-top" alt="open url selected">
+    </a></div></div>
+      </div>
+  </div>	
+
+
+      <div id="linkedin">
+<div class="box_right_1"></div>
+<div class="box_right_2">
+  <div id="social_details">
+    <div id="blue_font1">Username:</div>
+    <div id="left_font1"><input type="text" value="chris-morris-ba941a1a3" id="linkedin_Input1" style="width: 240px;"></div>
+    <br>
+    <div id="blue_font2">Address:</div>
+    <div id="left_font2"><input type="text" value="https://www.linkedin.com/in/chris-morris-ba941a1a3/" id="linkedin_Input2" style="width: 240px;"></div>
+    <br></div>
+</div>
+
+<div class="box_right_3"><div class="socials_contact"> <div id="pad_box"><a onclick="linkedin_Function1()">
+ <img src="social_logos/copy_profile_new.png" width="80px" alt="copy user not selected">
+<img src="social_logos/copy_user_on.png" width="80px" class="img-top" alt="copy user selected">
+ </a></div></div>
+ <div class="socials_contact"><div id="pad_box"><a onclick="linkedin_Function2()">
+  <img src="social_logos/copy_url_new.png" width="80px" alt="copy url not selected">
+ <img src="social_logos/copy_url_on.png" width="80px" class="img-top" alt="copy url selected">
+  </a></div></div>
+  <div class="socials_contact"><div id="pad_box"><a href="https://www.linkedin.com/in/chris-morris-ba941a1a3/" target="_blank">
+    <img src="social_logos/open_url_new.png" width="80px" alt="open url not selected">
+   <img src="social_logos/open_url_on.png" width="80px" class="img-top" alt="open url selected">
+    </a></div></div>
+      </div>
+
+      </div>
+
+
+      <div id="github">
+        <div class="box_right_1"></div>
+<div class="box_right_2">
+  <div id="social_details">
+    <div id="blue_font1">Username:</div>
+    <div id="left_font1"><input type="text" value="ChrisR32" id="github_Input1" style="width: 240px;"></div>
+    <br>
+    <div id="blue_font2">Address:</div>
+    <div id="left_font2"><input type="text" value="https://github.com/ChrisR32" id="github_Input2" style="width: 240px;"></div>
+    <br></div>
+</div>
+
+<div class="box_right_3"><div class="socials_contact"> <div id="pad_box"><a onclick="github_Function1()">
+ <img src="social_logos/copy_profile_new.png" width="80px" alt="copy user not selected">
+<img src="social_logos/copy_user_on.png" width="80px" class="img-top" alt="copy user selected">
+ </a></div></div>
+ <div class="socials_contact"><div id="pad_box"><a onclick="github_Function2()">
+  <img src="social_logos/copy_url_new.png" width="80px" alt="copy url not selected">
+ <img src="social_logos/copy_url_on.png" width="80px" class="img-top" alt="copy url selected">
+  </a></div></div>
+  <div class="socials_contact"><div id="pad_box"><a href="https://github.com/ChrisR32" target="_blank">
+    <img src="social_logos/open_url_new.png" width="80px" alt="open url not selected">
+   <img src="social_logos/open_url_on.png" width="80px" class="img-top" alt="open url selected">
+    </a></div></div>
+      </div>
+      </div>
+
+
+
+
+
+      <div id="medium">
+        <div class="box_right_1"></div>
+        <div class="box_right_2">
+          <div id="social_details">
+            <div id="blue_font1">Username:</div>
+            <div id="left_font1"><input type="text" value="@chrismorris_82249" id="medium_Input1" style="width: 240px;"></div>
+            <br>
+            <div id="blue_font2">Address:</div>
+            <div id="left_font2"><input type="text" value="https://medium.com/@chrismorris_82249" id="medium_Input2" style="width: 240px;"></div>
+            <br></div>
+        </div>
+        
+        <div class="box_right_3"><div class="socials_contact"> <div id="pad_box"><a onclick="medium_Function1()">
+         <img src="social_logos/copy_profile_new.png" width="80px" alt="copy user not selected">
+        <img src="social_logos/copy_user_on.png" width="80px" class="img-top" alt="copy user selected">
+         </a></div></div>
+         <div class="socials_contact"><div id="pad_box"><a onclick="medium_Function2()">
+          <img src="social_logos/copy_url_new.png" width="80px" alt="copy url not selected">
+         <img src="social_logos/copy_url_on.png" width="80px" class="img-top" alt="copy url selected">
+          </a></div></div>
+          <div class="socials_contact"><div id="pad_box"><a href="https://medium.com/@chrismorris_82249" target="_blank">
+            <img src="social_logos/open_url_new.png" width="80px" alt="open url not selected">
+           <img src="social_logos/open_url_on.png" width="80px" class="img-top" alt="open url selected">
+            </a></div></div>
+              </div>
+
+      </div>
+
+
+
+      <div id="phone"><div class="box_right_1"></div>
+      <div class="box_right_2">
+        <div id="social_details">
+          <div id="blue_font1"></div>
+          <div id="left_font1"></div>
+          <br>
+          <div id="blue_font2">Mobile:</div>
+          <div id="left_font2"><input type="text" value="0457298815" id="phone_Input1" style="width: 240px;"></div>
+          <br></div>
+      </div>
+      
+      <div class="box_right_3"><div class="socials_contact"> <div id="pad_box"><a onclick="phone_Function1()">
+       <img src="social_logos/copy_number_new.png" width="80px" alt="copy number not selected">
+      <img src="social_logos/phone_copy_on.png" width="80px" class="img-top" alt="copy number selected">
+       </a></div></div>
+       <div class="socials_contact"><div id="pad_box"><img src="blank_copy_off" /></div></div>
+        <div class="socials_contact"><div id="pad_box"><a href="tel:0457298815">
+        <img src="social_logos/phone_off_new.png" width="80px" alt="call number not selected">
+       <img src="social_logos/phone_open_on.png" width="80px" class="img-top" alt="call number selected">
+        </a></div></div>
+            </div></div>
+
+
+      <div id="email">
+        <div class="box_right_1"></div>
+        <div class="box_right_2">
+          <div id="social_details">
+            <div id="blue_font1"></div>
+            <div id="left_font1"></div>
+            <br>
+            <div id="blue_font2">Email:</div>
+            <div id="left_font2"><input type="text" value="morriscnm@hotmail.com" id="email_Input1" style="width: 240px;"></div>
+            <br></div>
+        </div>
+        
+        
+        <div class="box_right_3"><div class="socials_contact"> <div id="pad_box"><a onclick="email_Function1()">
+         <img src="social_logos/copy_email_new.png" width="80px" alt="copy email not selected">
+        <img src="social_logos/email_copy_on.png" width="80px" class="img-top" alt="copy email selected">
+         </a></div></div>
+         <div class="socials_contact"><div id="pad_box"><img src="blank_copy_off" /></div></div>
+          <div class="socials_contact"><div id="pad_box"><a href="mailto:morriscnm@hotmail.com">
+          <img src="social_logos/contact_email_new.png" width="80px" alt="email not selected">
+         <img src="social_logos/email_contact_on.png" width="80px" class="img-top" alt="email selected">
+          </a></div></div>
+        </div>      
+      </div>
+    
+  </div>
+
+</div>
+
+
+  
+
+	<div class="box_contact_main_3"><div id="contact_me_border"><img src="me_smile_blue_NO_border.png" height="480px" alt="Chris Morris with a smile" /></div></div>
+  
+
+
+
+</div>
+			
+
+	
+
+
+
+
+		
+ 
+		
+
+		
+
+
+
+	
+			
+			
+			
+
+
+
+</body>
+
+<div class="footer">
+  <p>Copyright 2020 Chris Morris</p>
+  <p>View this page in: <a href="#" onclick="changeCSS('mystyle.css', 0);">Dark Mode</a> | <a href="#" onclick="changeCSS('mystyle_white.css', 0);">Light Mode</a> | <a href="#" onclick="changeCSS('mystyle_blue.css', 0);">Blue Mode</a> | <a href="#" onclick="changeCSS('mystyle_purple.css', 0);">Purple Mode</a></p>
+</div>	
+
+</html>
+
+
