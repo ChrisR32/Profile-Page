@@ -1,5 +1,12 @@
 # Chris Morris Profile Page
 
+Website is live at: http://www.compuconsultations.org
+
+Git Hub - https://github.com/ChrisR32/Profile-Page
+
+If you need access to my git hub can you please tell me your email so i can send authorisation? 
+Everything in this zip is the same as whats on Git Hub, all same files. 
+
 ## Purpose
 This website purpose is to create a profile page about myself, telling the sites viewer:
 - About 
