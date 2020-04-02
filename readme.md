@@ -81,7 +81,7 @@ This website purpose is to create a profile page about myself, telling the sites
                   - Copy URL to clipboard
                   - Open the URL
 
-[logo]: contact.gif
+![contact me page](contact.gif)
 
 
 Sitemap
